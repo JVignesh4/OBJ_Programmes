@@ -1,17 +1,23 @@
 package com.blz.stockmanagement;
-
 public class Stock {
     private String stokeName;
     private int noOfShare;
     private double sharePrice;
-    public double totalStockValue;
+    public static double totalStockValue;
+
+    public Stock(String stokeName, int noOfShare, double sharePrice) {
+        this.stokeName = stokeName;
+        this.noOfShare = noOfShare;
+        this.sharePrice = sharePrice;
+    }
+
 
     public double getTotalStockValue() {
         return totalStockValue;
     }
 
     public void setTotalStockValue(double totalStockValue) {
-        this.totalStockValue = totalStockValue;
+        Stock.totalStockValue = totalStockValue;
     }
 
     public String getStokeName() {
