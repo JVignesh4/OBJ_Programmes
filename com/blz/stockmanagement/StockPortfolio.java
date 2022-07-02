@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class StockPortfolio {
     ArrayList<Stock> stockArray;
+
     public StockPortfolio(){
         stockArray =new ArrayList<>();
     }
